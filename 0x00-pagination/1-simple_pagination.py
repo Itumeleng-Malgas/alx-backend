@@ -16,9 +16,9 @@ class Server:
 
     def index_range(self, page: int, page_size: int) -> Tuple[int, int]:
         """
-        The function should return a tuple of size two containing a start index and
-        an end index corresponding to the range of indexes to return in a list for
-        those particular pagination parameters.
+        The function should return a tuple of size two containing a start index
+        and an end index corresponding to the range of indexes to return in a
+        list for those particular pagination parameters.
         """
         start_index = (page - 1) * page_size
         end_index = start_index + page_size
@@ -38,8 +38,8 @@ class Server:
 
     def get_page(self, page: int = 1, page_size: int = 10) -> List[List]:
         """
-        Takes two integer arguments page with default value 1 and page_size with
-        default value 10.
+        Takes two integer arguments page with default value 1 and page_size
+        with default value 10.
         """
         assert isinstance(page, int) and page > 0
         assert isinstance(page_size, int) and page_size > 0

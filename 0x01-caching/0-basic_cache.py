@@ -9,6 +9,11 @@ BaseCaching = __import__('base_caching.py').BaseCaching
 
 class BasicCache(BaseCaching):
     """BasicCache class inherits from BaseCaching and is a caching system"""
+
+    def __init__(self):
+        """ Use parent __init__ class to initialize """
+        BaseCaching.__init__(self)
+
     def put(self, key, item):
         """Add an item in the cache"""
         if key is not None and item is not None:

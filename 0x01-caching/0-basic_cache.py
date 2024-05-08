@@ -4,7 +4,7 @@ Create a class BasicCache that inherits from BaseCaching
 and is a caching system:
 """
 
-BaseCaching = __import__('base_caching.py').BaseCaching
+from base_caching import BaseCaching
 
 
 class BasicCache(BaseCaching):
